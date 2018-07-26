@@ -15,4 +15,9 @@ public class HelloRestService {
     public String sayHelloQueryParam(@RequestParam("name") String name){
         return "Hello "+name;
     }
+
+    @RequestMapping(path = "/howdy", method = RequestMethod.GET)
+    public String newEndPoint(){
+        return "It's Cool today";
+    }
 }
